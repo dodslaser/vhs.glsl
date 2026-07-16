@@ -9,35 +9,35 @@ PAL
 //!TYPE CONSTANT float
 //!MINIMUM 0.0
 //!MAXIMUM 1.0
-0.15
+0.28
 
 //!PARAM TAPE_WEAR
 //!DESC Mechanical abrasion and stretch: luma snow and capstan wow/flutter. 0 like-new, 1 thrashed.
 //!TYPE CONSTANT float
 //!MINIMUM 0.0
 //!MAXIMUM 1.0
-0.18
+0.30
 
 //!PARAM HEAD_ALIGNMENT
 //!DESC Head azimuth error: HF luma/chroma rolloff and deeper line shimmer. 0 aligned, 1 badly off.
 //!TYPE CONSTANT float
 //!MINIMUM 0.0
 //!MAXIMUM 1.0
-0.12
+0.20
 
 //!PARAM HEAD_WEAR
 //!DESC Worn/clogged video head with weak RF: reduced bandwidth, grain, wider aperture, streaky dropouts. 0 sharp, 1 worn.
 //!TYPE CONSTANT float
 //!MINIMUM 0.0
 //!MAXIMUM 1.0
-0.15
+0.25
 
 //!PARAM TRACKING
 //!DESC Servo tracking: per-line time-base jitter, head-switch tear, sync slips. 0 locked, 1 bad.
 //!TYPE CONSTANT float
 //!MINIMUM 0.0
 //!MAXIMUM 1.0
-0.08
+0.12
 
 //!PARAM GENERATION
 //!DESC Analogue dub count; each copy compounds bandwidth loss, color bleed, noise. 1 master, 5 copy-of-a-copy.
@@ -52,13 +52,6 @@ PAL
 //!MINIMUM 0.0
 //!MAXIMUM 1.0
 0.92
-
-//!PARAM SPEED
-//!DESC Global time multiplier for all animated effects. Below 1 slower, above 1 faster.
-//!TYPE CONSTANT float
-//!MINIMUM 0.1
-//!MAXIMUM 3.0
-0.65
 
 //!PARAM RECORDING_MODE
 //!DESC Recording mode: SP (best), LP, EP/SLP. PAL has no EP — use LP at most there.
@@ -80,6 +73,12 @@ PROGRESSIVE
 //!MAXIMUM 1.0
 0.0
 
+//!PARAM SPEED
+//!DESC Global time multiplier for all animated effects. Below 1 slower, above 1 faster.
+//!TYPE CONSTANT float
+//!MINIMUM 0.1
+//!MAXIMUM 3.0
+0.65
 
 //!HOOK MAIN
 //!BIND HOOKED
